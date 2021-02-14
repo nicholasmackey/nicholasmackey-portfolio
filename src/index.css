@@ -1,11 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import-normalize;
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+:root {
+  --yellow: #ffc600;
+  --dark: #222321;
+  --light: #ffffff;
+}
 
 body {
+  color: var(--light);
+  background-color: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+#root {
+  text-align: left;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 4rem;
   margin: 0;
-  font-family: 'Open Sans', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: #292929;
-  color: #fefefe;
+  line-height: 3.4rem;
+  letter-spacing: -0.4rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+.App {
+  margin-top: 6rem;
 }
