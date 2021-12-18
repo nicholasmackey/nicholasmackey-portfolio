@@ -5,9 +5,9 @@
 }
 
 :root {
-  --primary: #ffffff;
-  --grey: #373737;
-  --highlight: #292929;
+  --light: #ffffff;
+  --grey: #5c687d;
+  --dark: #0e1117;
   --accent: #402c54;
   --green: #6fcf97;
   --padding: 2rem;
@@ -26,14 +26,13 @@ html {
 body {
   font-family: "Work Sans", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
     "Helvetica Neue", sans-serif;
-  background-color: var(--highlight);
-  color: var(--primary);
+  background-color: var(--dark);
+  color: var(--light);
 }
 
 .wrapper {
   max-width: 800px;
   margin: 0 auto;
-  margin-top: var(--medium);
   margin-bottom: var(--medium);
 }
 
@@ -45,7 +44,7 @@ h1 {
   font-size: var(--large);
   letter-spacing: -0.2rem;
   line-height: 4rem;
-  color: var(--primary);
+  color: var(--light);
   margin: 1rem auto;
 }
 
@@ -53,7 +52,7 @@ h3 {
   font-size: var(--medium);
 }
 
-p {
+span {
   font-size: var(--small);
   line-height: 1.5;
   padding-top: 2.4rem;
@@ -62,6 +61,10 @@ p {
 header {
   display: flex;
   flex-direction: row-reverse;
+}
+
+.emoji {
+  font-size: var(--medium-ish);
 }
 
 .split {
@@ -96,12 +99,12 @@ header {
   display: flex;
   flex-direction: column;
   height: 33.33%;
-  background: var(--highlight);
+  background: var(--dark);
   font-size: 2.4rem;
 }
 
 .social-card a {
-  color: var(--primary);
+  color: var(--light);
   text-decoration: none;
   transition: all 300ms ease-in;
 }
@@ -109,7 +112,7 @@ header {
 .social-card:hover {
   background: var(--accent);
   background-image: url("../assets/topography.svg");
-  color: var(--primary);
+  color: var(--light);
 }
 
 .texture {
@@ -119,6 +122,35 @@ header {
   height: 3vh;
   width: 100%;
   margin-top: 2.4rem;
+}
+
+.try h1 {
+  color: var(--dark);
+  margin-top: 2em;
+}
+
+.try p {
+  margin-bottom: var(--medium-ish);
+}
+
+.try a {
+  font-size: var(--small);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--dark);
+  padding: var(--padding) 4rem;
+  background-color: #5ab385;
+}
+
+.try {
+  display: flex;
+  justify-content: space-evenly;
+  padding: var(--padding);
+  color: var(--dark);
+  text-align: center;
+  background-color: var(--light);
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+  height: 20rem;
 }
 
 ul {
@@ -160,7 +192,7 @@ fa-css3 {
   flex-direction: column;
   align-items: left;
   border-radius: var(--radius);
-  color: var(--primary);
+  color: var(--light);
   padding: var(--padding);
   margin: var(--small);
   transition: all 250ms ease-in-out;
@@ -173,7 +205,7 @@ fa-css3 {
 .project .button {
   background-color: var(--green);
   margin-bottom: var(--small);
-  color: var(--highlight);
+  color: var(--dark);
 }
 
 .project.button:hover {
@@ -185,7 +217,7 @@ fa-css3 {
   background: var(--accent);
   text-align: center;
   padding: 1.5rem 3rem;
-  color: var(--highlight);
+  color: var(--dark);
   border-radius: var(--radius);
   font-size: var(--small);
   text-decoration: none;
@@ -194,7 +226,8 @@ fa-css3 {
 }
 
 .button:hover {
-  transform: scale(1.02);
+  transform: scale(1.005);
+  filter: brightness(1.25);
 }
 
 .contact {
@@ -205,25 +238,19 @@ fa-css3 {
 }
 
 .github {
-  background-color: #ffc600;
+  background-color: #9260cb;
 }
 
 .linkedin {
-  background: #35bfc6;
+  background: #69adc6;
 }
 
 .email {
-  background: #e66bdc;
-}
-
-footer {
-  background-color: var(--primary);
-  color: var(--highlight);
-  padding: var(--padding);
+  background: #1baa7f;
 }
 
 footer {
   text-align: center;
-  color: var(--primary);
-  background: var(--grey);
+  color: var(--light);
+  background: var(--dark);
 }
