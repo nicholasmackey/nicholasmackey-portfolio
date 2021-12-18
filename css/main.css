@@ -249,6 +249,10 @@ fa-css3 {
   background: #1baa7f;
 }
 
+.center {
+  text-align: center;
+}
+
 footer {
   text-align: center;
   color: var(--light);
